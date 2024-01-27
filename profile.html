@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>User Login | Toko</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="form-container">
+      <div id="message">
+         <h2 class="msg">Welcome:)
+            <span id="u_name">
+               <script>
+                    if(localStorage.getItem('name')===null){
+                        window.location.href="login.html";
+                    }else{
+                        document.write(localStorage.getItem('name'))
+                    }
+                  
+               </script>
+               
+            </span></h2>
+            <h3>
+               Your Email: 
+               <script>
+                  document.write(localStorage.getItem('email'))
+               </script>
+            </h3>
+            <h3>
+               Your Password: 
+               <script>
+                  document.write(localStorage.getItem('password'))
+               </script>
+            </h3>
+         <button type="button" class="btn logout" onclick="logout()">Logout</button>
+         <button type="button" class="btn d_account" onclick="delete_account()">Delete Account</button>
+      </div>
+      
+   </div>
+   
+   <script src="script.js"></script>
+</body>
+</html>
