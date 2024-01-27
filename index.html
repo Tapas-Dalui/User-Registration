@@ -11,27 +11,21 @@
 </head>
 <body>
 
-   <div id="preloader"></div>
-
    <div class="form-container">
 
-      <form method="post">
+      <form>
          <h3>User Sign-up</h3>
-         <input type="text" name="name" placeholder="username" class="box" required>
-         <input type="email" name="email" placeholder="email" class="box" required>
-         <input type="password" name="password" placeholder="password" class="box" id="pwd" required>
-         <input type="password" name="cpassword" placeholder="confirm password" class="box" id="cpwd" required>
+         <input type="text" name="name" placeholder="username" id="uname" class="box" required>
+         <input type="email" name="email" placeholder="email" id="uemail" class="box" required>
+         <input type="password" name="password" placeholder="password" id="pwd" class="box" id="pwd" required>
+         <input type="password" name="cpassword" placeholder="confirm password"  id="cpwd" class="box" id="cpwd" required>
          <!-- <input type="submit" value="Register" class="btn"> -->
-          <button class="btn" >Register</button> 
-         <p>already have an account? <a href="#">Log-In</a></p>
+          <button class="btn" onclick="register()">Register</button> 
+          <!-- <h1>result</h1> -->
+         <p>already have an account? <a href="login.html">Login</a></p>
       </form>
    </div>
-   <!-- <script>
-    function showMsg() {
-        alert("Success: You have registered successfully!!");
-    }
-
-   </script> -->
+   
    <script src="script.js"></script>
 </body>
 </html>
